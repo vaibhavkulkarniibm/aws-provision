@@ -1,1 +1,1 @@
-Repo with terraform code to provision infra and services.
+Repo with terraform code to provision infra and services on cloud platorms
