@@ -27,3 +27,7 @@ module "redis" {
 module "cloudwatch" {
   source = "./modules/cloudwatch"
 }
+
+module "kinesis" {
+  source = "./modules/kinesis"
+}
