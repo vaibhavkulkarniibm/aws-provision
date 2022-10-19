@@ -31,3 +31,10 @@ module "cloudwatch" {
 module "kinesis" {
   source = "./modules/kinesis"
 }
+
+module "msk" {
+  subnet_1 = "${module.vpc.subnet_1}"
+  subnet_2 = "${module.vpc.subnet_2}"
+  sg_id =  "${module.vpc.sg_id}"
+  source = "./modules/msk-kafka"
+  }
