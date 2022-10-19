@@ -37,4 +37,8 @@ module "msk" {
   subnet_2 = "${module.vpc.subnet_2}"
   sg_id =  "${module.vpc.sg_id}"
   source = "./modules/msk-kafka"
-  }
+}
+
+module "secretmanager" {
+  source = "./modules/secretmanager"
+}
